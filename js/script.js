@@ -80,7 +80,7 @@ function parallaxIt() {
 
 parallaxIt();
 
-/* Desplaçament suau - Menus*/
+/* Desplaçament suau - Menus
 $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
@@ -90,3 +90,4 @@ $('a[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
+*/

@@ -2,12 +2,10 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-style: italic;
+
 }
 
-
 /* ---------------  HEADER  --------------*/
-
 header {
 	position: fixed;
 	top: 0;
@@ -136,19 +134,18 @@ a {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   height: 100%;
-  width: 100%;
+
   max-width: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   color: white;
-	font-size: 26px;
   margin: 0 auto;
   position: relative;
 }
 
-/*-------------- IMATGE PORTADA ----------------*/
+/*-------------- IMATGE DE PORTADA ----------------*/
 /* Imatges de les seccions */
 .contenidorParallax section:nth-child(1) .image {
   background-image: url(../img/capcalera1.png);
@@ -166,18 +163,57 @@ a {
 	margin-bottom: 40px;
 }
 
+.contenidorParallax section:nth-child(1)  h1 {
+	font-family: "PT Sans", sans-serif;
+	font-size: 1.8rem;
+	padding: 15px 0px 15px;
+}
+
+.contenidorParallax section h1 {
+	font-size: 3rem;
+	margin: 15px 0px 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px white solid;
+}
+
+.contenidorParallax section:nth-child(5) h1 {
+	border-bottom: none;
+}
+
+.contenidorParallax section p {
+	font-size: 1.5rem;
+}
+
+.text {
+	margin: 0px 150px;
+}
+
+/*-------------- 1 SECCIÓ ----------------*/
 .contenidorParallax section:nth-child(2) .image {
-  background-image: url(https://images.unsplash.com/photo-1462819067004-905a72ea3996?iq=100&fm=jpg&w=1000);
+  	background-image: url(../img/capcalera2.png);
 }
+
+/*-------------- 2 SECCIÓ ----------------*/
 .contenidorParallax section:nth-child(3) .image {
-  /*background-image: url(https://images.unsplash.com/photo-1461770354136-8f58567b617a?iq=100&fm=jpg&w=1000);*/
+  	background-image: url(../img/capcalera3.png);
 }
+
+/*-------------- 3 SECCIÓ ----------------*/
 .contenidorParallax section:nth-child(4) .image {
-  /*background-image: url(https://images.unsplash.com/photo-1461080639469-66d73688fb21?iq=100&fm=jpg&w=1000);*/
+  	background-image: url(../img/capcalera4.png);
 }
+/*-------------- 4 SECCIÓ ----------------*/
 .contenidorParallax section:nth-child(5) .image {
-  background-image: url(https://images.unsplash.com/photo-1460804198264-011ca89eaa43?iq=100&fm=jpg&w=1000);
+  	background-image: url(../img/capcalera5.png);
 }
+
+
+
+
+
+
+
+
 .container section:nth-child(6) .image {
   /*background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?iq=100&fm=jpg&w=1000);*/
 }
@@ -188,34 +224,83 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  /*opacity: 0.4;*/
+  opacity: 0.4;
 }
+
+
+
+
+
 
 
 
 
 /*-------------- FOOTER ----------------*/
-.contenidorParallax section:nth-child(3) {
-  height: 200vh150%;
+footer {
+	background: #283849;
+	padding: 40px 0px;
+	width: 100%;
 }
 
-.contenidorParallax section .contingutSeccio h2 {
-  margin: 0px;
+.contenidorFooter {
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
 }
 
-/* Border top & bottom 
-.contenidorParallax section .contingutSeccio:before, .contingutSeccio section .contingutSeccio:after {
-  width: 100%;
-  height: 1px;
-  display: block;
-  background-color: #d35400;
-  content: "";
-  margin: 30px 0;
+.col-sm-8 {
+	float: left;
 }
 
-*/
+.list-inline>li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	line-height: 1.42857143;
+	color: #ffffff;
+}
 
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+	display: inline;
+	overflow: hidden;
+}
+.col-sm-4 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+.margin-20 {
+	margin-bottom: 20px !important;
+}
+.copyright{
+	font-size: 17px;
+	line-height: 22px;
+	color: #ffffff;
+	font-weight: 400;
+}
 
+.small, small {
+	font-size: 85%;
+}
+small {
+	font-size: 80%;
+}
+.col-sm-8 {
+	float: left;
+}
+.col-sm-4 {
+	float: right;
+}
 
 
 
@@ -278,10 +363,24 @@ a {
 		top: 80px;
 	}
 	
+		/* Footer */
+	 .contenidorFooter {
+			width: 1170px;
+		}
+}
+
+@media screen and (max-width:768px) {
+	/* Footer */
+	.col-md-4 {
+		width: 100%;
+		float: left;
+	}
+	.col-sm-8 {
+		float: left;
+	}
 }
 
 @media (max-width: 991px) {
-
   .logo1 {
       display: none;
     }
@@ -291,8 +390,21 @@ a {
       width: 300px;
     }
 
-		.text {
+		.contenidorParallax section:nth-child(1)  h1 {
+				font-size: 1.1rem;
+		}
 
+		.contenidorParallax section  h1 {
+				font-size: 1.8rem;
+				
+		}
+
+		.contenidorParallax section  p {
+				font-size: 1.1rem;
+		}
+
+		.text{
+			margin: 0 auto;
 		}
 
 }
