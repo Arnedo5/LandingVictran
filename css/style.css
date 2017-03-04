@@ -1,0 +1,293 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+}
+
+
+/* ---------------  HEADER  --------------*/
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	background: #283849;
+	text-align: center;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+	z-index: 4;
+}
+
+.boto_Menu {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+a {
+	color: #FFF;
+	font-weight: inherit;
+	font-size: inherit;
+	text-decoration: none;
+}
+
+/* MENU HAMBUERGESA*/
+#menuBurger {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+#menuBurger a {
+	width: 60px;
+	height: 100%;
+}
+#menuBurger {
+	left: 0;
+}
+#menuBurger a {
+	background: #283849 url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-hamburger-menu.svg") no-repeat center center;
+}
+
+/* Botonera de menus - esquerra*/
+#botoneraMenu {
+	font-size: 17px;
+	font-family: "PT Sans", sans-serif;
+	color: #31353d;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 260px;
+	padding-top: 50px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	z-index: 3;
+	left: -100%;
+	background: #283849 ;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+/* Bottonera - mobile version*/
+#botoneraMenu.botoneraLateral {
+	left: 0;
+}
+
+#botoneraMenu ul a {
+	display: block;
+	line-height: 50px;
+	padding: 0 1em;
+	border-top: 4px transparent solid;
+}
+
+
+/* ---------------  CONTENIDORS PARALLAX   --------------*/
+.contenidorParallax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.contenidorParallax section {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Seccions */
+.contenidorParallax section .contingutSeccio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  font-size: 26px;
+  position: relative;
+}
+
+/*-------------- IMATGE PORTADA ----------------*/
+/* Imatges de les seccions */
+.contenidorParallax section:nth-child(1) .image {
+  background-image: url(../img/capcalera1.png);
+	-webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: .8;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	margin-bottom: 40px;
+}
+
+.contenidorParallax section:nth-child(2) .image {
+  /*background-image: url(https://images.unsplash.com/photo-1462819067004-905a72ea3996?iq=100&fm=jpg&w=1000);*/
+}
+.contenidorParallax section:nth-child(3) .image {
+  background-image: url(https://images.unsplash.com/photo-1461770354136-8f58567b617a?iq=100&fm=jpg&w=1000);
+}
+.contenidorParallax section:nth-child(4) .image {
+  /*background-image: url(https://images.unsplash.com/photo-1461080639469-66d73688fb21?iq=100&fm=jpg&w=1000);*/
+}
+.contenidorParallax section:nth-child(5) .image {
+  background-image: url(https://images.unsplash.com/photo-1460804198264-011ca89eaa43?iq=100&fm=jpg&w=1000);
+}
+.container section:nth-child(6) .image {
+  /*background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?iq=100&fm=jpg&w=1000);*/
+}
+
+.contenidorParallax section .image {
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /*opacity: 0.4;*/
+}
+
+
+
+
+.contenidorParallax section:nth-child(2){
+  height: 70vh;
+}
+
+.contenidorParallax section .contingutSeccio h2 {
+  margin: 0px;
+}
+
+/* Border top & bottom 
+.contenidorParallax section .contingutSeccio:before, .contingutSeccio section .contingutSeccio:after {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #d35400;
+  content: "";
+  margin: 30px 0;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Querys */
+@media only screen and (min-width: 1200px) {
+	/* Header */
+	header {
+		height: 80px;
+	}
+
+	#menuBurger {
+		display: none; 
+	}
+	
+	/* Botonera Menus*/
+	#botoneraMenu {
+		position: fixed;
+		height: auto;
+		width: auto;
+		left: auto;
+		right: 2em;
+		padding-top: 0;
+		top: 0;
+		background: transparent;
+		box-shadow: none;
+		line-height: 80px;
+		z-index: 4;
+	}
+    
+	#botoneraMenu li {
+        border-top: 4px transparent solid;
+		display: inline-block;
+		margin-left: 1em;
+	}
+
+	#botoneraMenu ul a {
+		display: inline-block;
+		height: auto;
+		line-height: 1;
+		padding: 1em 1.4em;
+		border-bottom: none;
+		color: #d4d7db;
+		border-radius: 0.25em;
+	}
+
+    #botoneraMenu ul li:hover {
+        border-top: 4px #e6b110 solid;
+        background: #315564;
+    }
+
+	.container{
+		top: 80px;
+	}
+	
+}
+
+@media (max-width: 991px) {
+
+  .logo1 {
+      display: none;
+    }
+
+    .logo2 {
+      height: auto;
+      width: 300px;
+    }
+
+}
