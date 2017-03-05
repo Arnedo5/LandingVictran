@@ -294,8 +294,6 @@ small {
 
 
 
-
-
 /* Media Querys */
 @media only screen and (min-width: 1200px) {
 	/* Header */
@@ -374,21 +372,21 @@ small {
       width: 300px;
     }
 
-		.contenidorParallax section:nth-child(1)  h1 {
-				font-size: 1.1rem;
-		}
+	.contenidorParallax section:nth-child(1)  h1 {
+			font-size: 1.1rem;
+	}
 
-		.contenidorParallax section  h1 {
-				font-size: 1.8rem;
-				
-		}
+	.contenidorParallax section  h1 {
+			font-size: 1.8rem;
+			
+	}
 
-		.contenidorParallax section  p {
-				font-size: 1.1rem;
-		}
+	.contenidorParallax section  p {
+			font-size: 1.1rem;
+	}
 
-		.text{
-			margin: 0 auto;
-		}
+	.text{
+		margin: 0 auto;
+	}
 
 }
