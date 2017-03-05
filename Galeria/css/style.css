@@ -211,7 +211,7 @@ a {
 }
 
 .slider .item h3{
-  font:30px/50px RalewayB;
+  font:40px/50px Roboto;
   text-transform:uppercase;
   color:#FFF;
   -webkit-animation:fadeOutRight 1s both;
@@ -223,9 +223,8 @@ a {
 .slider .item h5{
   margin:0;
   padding:0;
-  font:15px/30px RalewayR;
+  font:20px/30px Roboto;
   color:#FFF;
-  max-width:600px;
   overflow:hidden;
   height:60px;
   -webkit-animation:fadeOutLeft 1s both;
@@ -489,6 +488,12 @@ small {
       height: auto;
       width: 300px;
     }
+	/* Slider */
+	.slider .item .backgroundImage .info{
+		line-height: 70vh;
+	}
 
-
+	.slider .item h3 {
+		font-size: 1.1rem;
+	}
 }
