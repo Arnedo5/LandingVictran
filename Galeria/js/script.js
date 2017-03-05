@@ -46,8 +46,8 @@ $(document).ready(function ($) {
 	}*/
 });
 
+/* SLIDER */
 $(document).ready(function(){
-  
   $(".slider").slick({
     autoplay:true,
     autoplaySpeed:10000,
@@ -63,5 +63,5 @@ $(document).ready(function(){
     prevArrow:'<button class="PrevArrow"><i class="icon-circle-left"></i></button>',
     nextArrow:'<button class="NextArrow"><i class="icon-circle-right"></button>', 
   });
-  
 })
+

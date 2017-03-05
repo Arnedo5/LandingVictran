@@ -164,7 +164,7 @@ a {
   text-align:center;
   font:20px/45px FontAwesome;
   color:#FFF;
-  z-index:5;
+  z-index:1;
 }
 
 .slider .PrevArrow{
@@ -179,7 +179,7 @@ a {
   text-align:center;
   font:20px/45px FontAwesome;
   color:#FFF;
-  z-index:5;
+  z-index:1;
 }
 
 .slider .slick-dots{
@@ -277,11 +277,6 @@ a {
 
 /*-------------- GALERIA D'IMATGES ----------------*/
 .galeria {
-    column-count: 4;
-    column-gap: 1em;
-}
-
-.galeria {
     margin: 15px 15px;
     padding: 0;
     -moz-column-gap: 1.5em;
@@ -308,33 +303,26 @@ a {
 }
 
 @media only screen and (min-width: 400px) {
-    .galeria {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 1;
+	.galeria {
+       column-count: 1;
     }
 }
+    
 
 @media only screen and (min-width: 700px) {
     .galeria {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
         column-count: 3;
     }
 }
 
 @media only screen and (min-width: 900px) {
     .galeria {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
         column-count: 4;
     }
 }
 
 @media only screen and (min-width: 1100px) {
     .galeria {
-        -moz-column-count: 5;
-        -webkit-column-count: 5;
         column-count: 5;
     }
 }
@@ -501,5 +489,6 @@ small {
       height: auto;
       width: 300px;
     }
+
 
 }
