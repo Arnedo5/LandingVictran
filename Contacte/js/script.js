@@ -33,15 +33,4 @@ $(document).ready(function ($) {
 			$body.addClass('overflow-hidden');
 		}
 	}
-	//Mostrar la botonera de menus | esquerra |
-    /*
-	function botonsMenu( $navigation, $MQ) {
-		if ( $(window).width() >= $MQ ) {
-			$navigation.detach();
-			$navigation.appendTo('header');
-		} else {
-			$navigation.detach();
-			$navigation.insertAfter('header');
-		}
-	}*/
 });

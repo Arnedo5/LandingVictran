@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-
 }
 
 /* ---------------  HEADER  --------------*/
@@ -286,14 +285,6 @@ small {
 	float: right;
 }
 
-
-
-
-
-
-
-
-
 /* Media Querys */
 @media only screen and (min-width: 1200px) {
 	/* Header */
@@ -345,10 +336,10 @@ small {
 		top: 80px;
 	}
 	
-		/* Footer */
-	 .contenidorFooter {
-			width: 1170px;
-		}
+	/* Footer */
+	.contenidorFooter {
+		width: 1170px;
+	}
 }
 
 @media screen and (max-width:768px) {
@@ -373,20 +364,19 @@ small {
     }
 
 	.contenidorParallax section:nth-child(1)  h1 {
-			font-size: 1.1rem;
+		font-size: 1.1rem;
 	}
 
 	.contenidorParallax section  h1 {
-			font-size: 1.8rem;
+		font-size: 1.8rem;
 			
 	}
 
 	.contenidorParallax section  p {
-			font-size: 1.1rem;
+		font-size: 1.1rem;
 	}
 
 	.text{
 		margin: 0 auto;
 	}
-
 }

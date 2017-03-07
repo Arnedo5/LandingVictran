@@ -83,8 +83,71 @@ a {
 	border-top: 4px transparent solid;
 }
 
+/* ------------- FORMULARI --------------*/
+.login-page {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #F2F2F2;
+	
+}
+
+.form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 450px;
+	margin-top: 80px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form h1 {
+	padding: 15px;
+	margin: 0 0 15px;
+	font-size: 1.8rem;
+	color: #3b5166;
+}
+
+.form input, textarea {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  /* Alternative color - # DDDDDD */
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #073342;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin: 0 0 15px;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #0D5972;
+}
+
 /*-------------- FOOTER ----------------*/
 footer {
+
 	background: #283849;
 	padding: 40px 0px;
 	width: 100%;
@@ -149,16 +212,6 @@ small {
 .col-sm-4 {
 	float: right;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Media Querys */
 @media only screen and (min-width: 1200px) {
@@ -238,4 +291,12 @@ small {
       width: 300px;
     }
 
+	/* Formulari */
+	.form {
+		margin: 40px 20px 0px 20px;
+	}
+
+	.form h1 {
+		display: none;
+	}
 }
